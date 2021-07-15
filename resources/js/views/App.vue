@@ -26,7 +26,6 @@ export default {
       axios
         .get("/api/dump_database")
         .then((res) => {
-          //   console.log(res.data);
           this.columns = res.data;
         })
         .catch((err) => {
